@@ -1,0 +1,116 @@
+
+
+.center {
+  text-align: center;
+  color: #001f3f;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+img {
+    display: inline;
+    width: 200px;
+    height: 75px;
+}
+
+
+#input-parent{
+  text-align: center;
+}
+
+#guesses{
+  text-align: center;
+
+}
+
+
+body{
+  background-image: url('../bg.jpg');
+  background-size:100%;
+}
+
+.guess{
+
+  display: inline;
+
+  font-size: 50px;
+
+  padding: 0 40px 0 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  border-width: medium;
+
+
+  
+}
+
+
+#footer {
+
+    border-top: solid 6px #0074D9;
+    border-collapse: separate;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+.player-input{
+  margin-top: 50px;
+  border-color:  #111111;
+  border-radius: 75px;
+  border-width: medium;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 30px;
+
+}
+/*to make the placeholder settings*/
+::-webkit-input-placeholder {
+  text-align: center;
+
+}
+
+
+#submit {
+  /*To move the position we will use the top, bottom, right left*/
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+  /*margin-top: 40px;*/
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
+  background-color: #7FDBFF;
+}
+
+
+#menu-btns {
+  align-items: center;
+}
+
+
+.gamebttns{
+  text-align: center;
+  border: none;
+  width: 200px;
+  border-radius: 12px;
+  color: white;
+  background-color: #39CCCC;
+  font-size: 37px;
+}
+
+
+
