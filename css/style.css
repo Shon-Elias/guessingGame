@@ -64,6 +64,9 @@ body{
 
 
 .player-input{
+
+/*this remove the border focus*/
+  outline: none;
   margin-top: 50px;
   border-color:  #111111;
   border-radius: 75px;

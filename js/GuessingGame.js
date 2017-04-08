@@ -52,6 +52,7 @@ Game.prototype.checkGuess = function(){
             $('#guess-list li:nth-child('+ this.pastGuesses.length +')').text(this.playersGuess);
             //enable hint only after 3 guesses
              if(this.pastGuesses.length === 3){
+               $('#hint').fadeIn();
                $('#hint').prop('disabled', false);
              }
              if(this.pastGuesses.length === 5){
@@ -120,7 +121,8 @@ Game.prototype.provideHint = function(){
 //jQuery
 
 $(document).ready(function(){
-  
+  $('#hint').hide();
+
   var game = new Game();
 
   $('#hint').prop('disabled', true);
@@ -147,6 +149,7 @@ $(document).ready(function(){
       $('.guess').text('-');
       $('#submit').prop("disabled",false);
       $('.player-input').prop('disabled', false);
+      $('#hint').fadeOut('300');
       // focus on player input every new game
       $('.player-input').focus();
     });
@@ -156,6 +159,7 @@ $(document).ready(function(){
       var hints = game.provideHint();
       $('h1').text('One of the is your winning number '+hints[0]+', '+hints[1]+', or '+hints[2]);
       // Once the user use the hint. 
+      $('#hint').fadeOut('300');
       // set hint disable for the current game
       $('#hint').prop('disabled', true);
 
